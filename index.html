@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyday Git</title>
+</head>
+<body>
+    <div What is Git>
+   <h1><b>What is Git?</b></h1>
+   <p><em><b>Git is a distributed version control system that tracks changes in any set of computer files</em></b>, usually used for coordinating work among programmers who are collaboratively developing
+     source code during software development. Git's goals include speed, data integrity, 
+     and support for distributed, non-linear workflows.</p> 
+     <p><b>A version Control System </b> is a distributed version control system that tracks changes in any set of
+         computer files, usually used for coordinating work among programmers who are collaboratively developing source 
+         code during software development. Git's goals include speed, data integrity, and support for distributed,
+         non-linear workflows.</p>
+         <p><u>Other version control systems like Git are:</u>
+        <ol>
+            <li><b>Bazaar-</b>Bazaar is a version control system that helps you track project history over time 
+                and to collaborate easily with others. </li><br>
+                <li><b>CVS-</b>CVS is a version control system, an important component of Source Configuration Management (SCM). 
+                    Using it, you can record the history of sources files, and documents.</li><br>
+                    <li><b>Mercurial-</b>Mercurial is a free, distributed source control management tool. 
+                        It efficiently handles projects of any size and offers an easy and intuitive interface.</li><br>
+                        <li><b>AWS-</b>AWS CodeCommit is a fully-managed source control service that makes it easy for companies to
+                             host secure and highly scalable private Git repositories. You can use CodeCommit 
+                            to securely store anything from source code to binaries, and it works seamlessly with your existing Git tools.</li>
+                    </ol></p>
+                    <p><b> Reasons for Focus on git and Github:</b>
+                        <ul>
+                            <li><b>Distributed Development:</b> Git is a distributed version control system, meaning every user has a complete 
+                                copy of the repository. This enables 
+                                developers to work offline, commit changes locally, and collaborate seamlessly across different locations.</li>
+                                <li><b>Speed and Efficiency:</b> Git is designed for speed and efficiency, allowing for quick branching, merging, and committing of changes. Its lightweight branching model enables developers to experiment with new features without impacting the main 
+                                    codebase.</li>
+                                    <li><b>Branching and Merging:</b> Git's branching and merging capabilities are robust, allowing teams to work on multiple features simultaneously and merge changes back into the main codebase easily. Branches are lightweight and can be created and merged 
+                                        quickly.</li>
+                                        <li><b>Flexibility and Customization: </b> provides a flexible workflow that can be customized to suit the needs of different projects and teams. Users can define their branching strategies, workflows, and access controls to meet specific 
+                                            requirements.</li>
+                                            <li><b>Visibility and Transparency:</b> GitHub enhances the visibility and transparency of projects by providing a centralized platform for hosting code repositories. Developers can easily browse code, track changes, and contribute to open-source projects, fostering transparency and encouraging 
+                                                collaboration.</li>
+                        </ul>
+                    </p>
+    </div>
+    <div Installing Git>
+                    <h1><b>Installing Git</b></h1>
+                    <p>Check whether Git is installed in your machine.To do so run the command:
+                        <pre>
+                            git --version
+                        </pre>                     
+
+                                        
+                        <img src="./assets/git_version.png" alt="Entering git --version in the CMD "><br>
+                        <p><i>Checking whether Git is installed in your System</i></p>
+                    </p>
+                    <p>If Git is not installed yet,proceed to download and install Git.</p>
+                    <h2>Downloading and installing Git</h2>  
+                    <h3>Downloading Git</h3>
+                    <ul>
+                        <li>visit <a href="https://git-scm.com/"target="blank">Git's official website </a> </li>
+                        <li>Choose the operating system you are using ie. Windows,Mac or Tarballs</li>
+                        <li>Choose if 32-bit or 64-bit</li>                        
+                    </ul>  
+                    <p>The download will start automatically.</p>
+                    <h3>Installing Git</h3> 
+                    <ul>
+                        <li><b>Run the Installer:</b> Locate the downloaded Git installer file (typically named something like Git-2.x.x.x-64-bit.exe) and double-click on it to run the installer.</li>
+                        <li><b>Welcome Screen: </b> installer will display a welcome screen. Click "Next" to proceed with the installation.</li>
+                        <li><b>License Agreement:</b> Read the Git License Agreement carefully, and if you agree, select the checkbox indicating your acceptance. Then click "Next" to continue.</li>
+                        <li><b>Select Components:</b> On the "Select Components" screen, you can choose the components to install. By default, all components are selected, which is recommended for most users. Click "Next" to proceed.</li>
+                        <li><b>Choose Install Location:</b> You can specify the installation directory for Git. By default, it installs in 'C:\Program Files\Git', but you can choose a different location if needed. Click "Next" to continue. </li>
+                        <li><b>Select Start Menu Folder:</b> Choose the Start Menu folder for Git shortcuts. You can leave the default selection and click "Next" to proceed .Then
+                            Choose the default editor On the next screen, you can choose the default text editor for Git. The default option is "Use the Nano editor by default," but you can select a different editor if you prefer. Click "Next" to continue.</li>
+                            <li><b>Adjusting your PATH environment:</b> Select the desired option for adjusting the PATH environment. The recommended option is "Use Git from the Windows Command Prompt," which adds Git to the system PATH, allowing you to use Git from the command line. Click "Next" to continue.</li>
+                            <li><b>Choosing HTTPS transport backend: </b>Select the desired option for HTTPS transport backend. The recommended option is "Use the OpenSSL library." Click "Next" to continue.Then
+                                configure the line ending conversions by choosing the line ending conversion behavior. The recommended option is "Checkout Windows-style, commit Unix-style line endings." Click "Next" to continue.</li>
+                                <li><b>Configuring the terminal emulator to use with Git Bash: </b> the terminal emulator to use with Git Bash. The default option is "Use MinTTY." Click "Next" to continue.Then
+                                    configure extra options.Optionally, you can enable or disable additional features like file system caching or experimental options. Adjust these options according to your preferences. Click "Next" to continue.</li>
+                                    <li><b>Installing Git: </b>, click "Install" to begin the installation process. The installer will copy the necessary files and configure Git on your system.</li>
+                                    <li><b>Completing the Installation: </b>Once the installation is complete, you'll see a "Completing the Git Setup Wizard" screen. Optionally, you can select the checkbox to launch Git Bash. Click "Finish" to complete the installation.</li>
+                    </ul>  
+    </div>
+                    <div Configuring Git>
+                        <h2>Configuring Git</h2>
+                        <p>Configure your username and email address using the following commands:
+                            <pre>
+                                git config --global user.name "<i>your name</i>"
+                                git config --global user.email "<i>your email address</i>"
+                            </pre>
+                            on your command prompt
+                        </p>
+                        <img src="./assets/name_and_email.png" alt="running git --config global user.name'your name'for name">
+                        <p><i>Configuring your name and email address</i></p>
+                    </div>             
+  <div>
+    <h2>Initializing Git Repository</h2>
+    <p>A  Git repository is a central storage location for managing and tracking changes in files and directories. It is a crucial component of the Git version control system, which enables collaborative development and allows multiple developers to work on a project simultaneously. Git repositories are widely used in software development, where they facilitate efficient and controlled code management</p>
+    <h3>How to imitialize a git repository</h3>
+    <p>Run the command:
+        <pre>
+            git init
+        </pre> </p>
+    <img src="./assets/gitinit.png"alt="run gitinit on your cmd">
+    <p><i>Initializing a git repository</i></p>
+  </div>
+  <div>
+    <h2>Adding files to the staging area</h2>
+    <p>A  staging area is a file, generally contained in your Git directory, that stores information about what will go into your next commit. </p>
+    <p><u>Process of adding files to the staging area</u>
+    <ol>
+        <li><b>Check status of your repository by running 
+            <pre>
+                git status
+            </pre>
+    
+            <img src="./assets/git_status.png" alt="run git status on your cmd">
+            <p><i>Checking status of the git repository</i></p>
+        </b></li>
+        <li><b>Add files to the staging area</b> 
+            <p>-For individual files, run
+                <pre>
+                    git add <i>filename</i>
+                </pre>
+                <img src="./assets/git_add_filename.png" alt="run git add 'filename' on your cmd">
+                <p><i>Adding individual files to staging area</i></p>
+            </p> 
+            <p>-For all files in the current repository, run the command:
+                <pre>
+                    git add .
+                </pre>
+                <img src="./assets/git_add.png" alt="run git add . in the cmd">
+                <p><i>Adding all files in the Current repository</i></p>
+                <p>-For all files in the entire repository,run the command:
+                    <pre>
+                        git add --all
+                    </pre>
+                    <img src="./assets/git_add_all.png" alt="Run git add --all in your cmd">
+                    <p><i>Adding all files in the entire repository</i></p>
+                </p>
+            </p>           
+        </li>
+        <li><b>confirm that the files have been staged.</b> Staged files will be listed under "Changes to be committed."<br>
+        Run the command:
+    <pre>
+        git status
+    </pre>
+<img src="./assets/git_status.png" alt="run git status on your cmd">
+<p><i>Confirming that files have been staged</i></p>
+</li>
+    </0l>
+    </p>
+    <h3><u>Differences between tracked and untracked files</u> </h3>
+    <ul>
+        <li>Presence in Version Control: Tracked files are part of the version control system and have been included in the repository's history, while untracked files are not part of version control and have not been added to the repository.</li>
+        <li>Monitoring of Changes: Git actively monitors changes to tracked files, while untracked files are not monitored by Git until they are explicitly added to the repository.</li>
+        <li>Visibility in Commands: Tracked files appear in the output of commands like git status and git diff, whereas untracked files are specifically listed as "Untracked files" in git status output.</li>
+    </ul>
+  </div>
+  <div commiting changes>
+    <h2>Commiting Changes</h2>
+    <p>Once you've added all the desired changes to the staging area, you can commit them to the repository.<br>
+    Use the command:
+<pre>
+    git commit -m "your commit message"
+</pre>
+<img src="./assets/git_commit.png" alt="run git commit -m 'your commit message'">
+<p><i>Commiting changes  to the repository</i></p>
+</p>
+<p><u>How to write good commit messages</u><br>
+1.Aim for concise commit messages that are no longer than 50-72 characters for the subject line.<br>
+2.Separate Subject and Body: If your commit message requires more explanation, separate the subject line from the body with a blank line. <br>
+3.Be Specific: Provide specific details about the changes you've made, including any relevant context or reasoning behind the change. <br>
+4.Use Present Tense for Subject Line, Past Tense for Body: Start the subject line with a present-tense verb
+</p>
+<p><u>How to view past commits</u><br>
+Run the command:
+<pre>
+    git log
+    </pre>
+    <img src="./assets/git_log.png" alt="run git log">
+    <p><i>How to view past commits</i></p>
+</p>
+<p><u>how to go back to a particular commit.<br></u>
+Run the command:
+<pre>
+    git log -p
+</pre>
+<img src="./assets/git_log_p.png" alt="Run git log -p">
+<p>how to go back to a particular commit</p>
+</p>
+  </div>
+  <div branches>
+    <h2>what branches in git are</h2>
+    <p>In Git, branches are essentially pointers to a specific commit in the repository's history. They allow developers to work on different features, fixes, or versions of their code simultaneously without affecting the main or other branches.</p>
+    <h2> why Branches are important.</h2>
+    <p>1.<b>Isolation of Work:</b>Branches allow developers to isolate their work on different features, bug fixes, or experiments.<br>
+    2.<b>Feature Development: </b>Feature branches provide a structured way to develop new features or enhancements.<br>
+3.<b>Release Management: </b> Branches play a crucial role in release management. Release branches can be created to stabilize and prepare the codebase for a new release. <br>
+4.<b>Code Reviews and Testing: </b> Branches facilitate code reviews and testing processes. Pull requests or merge requests are typically used to propose changes from one branch to another, allowing team members to review code, provide feedback, and ensure the quality of changes before they are merged into the main codebase.</p>
+  </div>
+  <div Creating a branch>
+    <h2>Creating a branch</h2>
+    <p>To create a new branch in Git,run the command:
+        <pre>
+            git branch 'new branch name'
+        </pre><br> followed by the name of the new branch. </p>
+        <img src="./assets/git_branch.png" alt="run git branch">
+        <p><i>Creating a new branch</i></p>
+  </div>
+  <div Viewing all branches>
+    <h2>Viewing all branches</h2>
+    <p>To view all branches in the repository, you can run the 
+        <pre>
+            git branch
+        </pre>
+        without any arguments:</p>
+        <img src="./assets/git_viewbranch.png" alt="run git branch">
+        <p><i>How to know which branch is the active branch</i><br>
+           View the active branch by running the command
+           <pre>
+            git branch
+           </pre> <br>
+            The currently checked out branch will be indicated by an asterisk (*) next to its name in the list of branches.
+        <img src="./assets/gitbranch.png" alt="run git branch">
+    </p>
+  </div>
+  <div Switching active branches>
+    <h2>Switching active branches</h2>
+    <p>To switch to a different branch, you can use the git checkout command followed by the name of the branch you want to switch to.<br>
+    Run the command:
+<pre>
+    git checkout"branch name"
+</pre>
+<img src="./assets/git_checkout.png" alt="run git checkout">
+<p><i>Switching active branches</i></p>
+</p>
+  </div>
+  <div Merging a branch>
+    <h2>Merging a branch</h2>
+    <p>first switch to  the main branch, then use the git merge command followed by the name of the branch you want to merge. <br>
+    The commands are:
+    <pre>
+        git checkout master
+        git merge my-branch
+    </pre>
+    <img src="./assets/git_merge.png" alt="run git checkout master and git merge my-branch">
+    <p><i>Merging a branch</i></p>
+    </p>
+  </div>
+  <div Deleting a branch>
+    <h2>Deleting a branch</h2>
+    <p>To delete a branch in Git, you can use the git branch -d command followed by the name of the branch you want to delete. <br>
+    Run the command:
+<pre>
+    git branch -d "branch name"
+</pre>
+<img src="./assets/git_delete.png" alt="run git branch -d'branch name'">
+<p><i>Deleting a branch</i></p>
+</p>
+  </div>
+  <div>
+    <h2>Recommendend next steps for my users</h2>
+    <ol>
+        <li>Git Hooks: Explore Git hooks, which allow you to automate actions before or after certain Git events such as commits, merges, or pushes. Git hooks can be used to enforce coding standards, run tests, or trigger deployment processes.</li>
+        <li>Git GUIs and Tools: Experiment with Git GUIs (Graphical User Interfaces) and other Git tools to enhance your Git experience. Popular Git GUIs include Sourcetree, GitKraken, and GitHub Desktop.</li>
+        <li>Git Configurations: Explore advanced Git configurations to customize your Git environment. This includes configuring aliases, setting up global ignore patterns and customizing colors</li>
+    </ol>
+  </div>
+</body>
+<div conclusion>
+    <p>In conclusion,Git and GitHub revolutionize software development by providing robust version control, collaboration, and project management capabilities. Git facilitates efficient code tracking, branching, and merging, while GitHub enhances collaboration with pull requests, code reviews, and issue tracking. Together, they empower developers to streamline workflows, improve code quality, and accelerate software delivery in modern development environments.<br>
+    If you enjoyed this blog,you can reach out to me through <a href="mailto:njerivictory52@gmail.com">njerivictory52@gmail.com </a> to ask for more blogs.</p>
+</div>
+</html>
